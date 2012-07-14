@@ -41,7 +41,45 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EndianExtension.cs" />
+    <Compile Include="Exportable\ExportableReader.cs" />
+    <Compile Include="Library\GameLibrary.cs" />
+    <Compile Include="Library\LibraryBuilder.cs" />
+    <Compile Include="Library\ResourceIndex.cs" />
+    <Compile Include="Library\ResourceList.cs" />
+    <Compile Include="Package\Compression.cs" />
+    <Compile Include="Package\DBPFPackage.cs" />
+    <Compile Include="Package\DBPFPackageBuilder.cs" />
+    <Compile Include="Package\ResourceEntry.cs" />
+    <Compile Include="Package\Resources\IResourceValue.cs" />
+    <Compile Include="Package\TGI_Key.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceCFG\ResourceCFG.cs" />
+    <Compile Include="ResourceCFG\ResourceCFGEntry.cs" />
+    <Compile Include="ResourceCFG\ResourceGroup.cs" />
+    <Compile Include="Resources\DepList.cs" />
+    <Compile Include="Resources\DepListEntry.cs" />
+    <Compile Include="Resources\ResourceBONE.cs" />
+    <Compile Include="Resources\ResourceCASP.cs" />
+    <Compile Include="Resources\ResourceCLIP.cs" />
+    <Compile Include="Resources\ResourceLDES.cs" />
+    <Compile Include="Resources\ResourceOBJD.cs" />
+    <Compile Include="Resources\ResourceSIME.cs" />
+    <Compile Include="Resources\Resource_RIG.cs" />
+    <Compile Include="Resources\Resource_RIGBone.cs" />
+    <Compile Include="Resources\SimIndex.cs" />
+    <Compile Include="Resources\SimIndexEntry.cs" />
+    <Compile Include="SubStream.cs" />
+    <Compile Include="TS3GUID.cs" />
+    <Compile Include="TS3Pack\Sims3Pack.cs" />
+    <Compile Include="TS3Pack\Sims3PackBuilder.cs" />
+    <Compile Include="TS3Pack\TS3PackManifest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\S3ToolKit.Utils\S3ToolKit.Utils\S3ToolKit.Utils.csproj">
+      <Project>{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}</Project>
+      <Name>S3ToolKit.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
