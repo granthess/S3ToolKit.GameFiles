@@ -1,0 +1,20 @@
+S3ToolKit.GameFiles is a collection of classes that provides read/write access to the .package and .sims3pack files used by The Sims 3.
+
+The library is licensed under the LGPL (Lesser GPL) and is a significant component of the CC-Magic content management system.
+
+For more information on CC-Magic or to contact the author, please visit http://sims3.the-prof.net/forums/
+
+Misc: Possibly incorrectly located classes and exceptions.
+  SubStream is a special stream used to read well defined subsections of a stream as if they were a totally separate stream.  Read only.
+  EndianExtension is a set of extension methods for handling endian swapping.
+  TS3GUID is a class that provides a GUID in the format expected by TS3's .sims3pack format.
+  
+Library: Provides access to groups of .package files based on the same mechanics that the games uses, i.e. resource.cfg
+Package: Provides access to DBPF files
+ResourceCFG: Provides resource.cfg file parsing support
+Resources: Provides access to the individual "files" stored inside a DBPF file.
+TS3Pack: Implements reading of .sims3pack files.  Uses substream to allow a package to be read directly from the sims3pack file.
+
+License info:
+  The file Compression.cs is taken from the s3pi project by PLJones pljones@users.sf.net, negotiations are under way to change it from GPL to LGPL
+  for licensing correctness.

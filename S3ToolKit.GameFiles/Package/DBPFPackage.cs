@@ -1,4 +1,22 @@
-﻿using System;
+﻿/*
+    Copyright 2012, Grant Hess
+
+    This file is part of S3ToolKit.GameFiles.
+
+    S3ToolKit.Utils is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+*/
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -161,15 +179,6 @@ namespace S3ToolKit.GameFiles.Package
             {
                 _IsEncrypted = true;
                 throw new InvalidDataException("DBPP Not Supported");
-            }
-
-            if (IsEncrypted)
-            {
-                // Decrypt the header
-                for (int i = 0; i < 0x60; i++)
-                {
-                    buffer[i] ^= EncryptKey[i];
-                }
             }
 
             Reader = new BinaryReader(new MemoryStream(buffer, false));
@@ -380,20 +389,7 @@ namespace S3ToolKit.GameFiles.Package
         #endregion
 
         #region Helpers
-        public static readonly byte[] EncryptKey = new byte[] { 
-            0x00, 0x00, 0x00, 0x16, 0xad, 0x20, 0xa4, 0x7a,     // DBPP, Major 
-            0x2a, 0xee, 0xdc, 0xb7, 0x4d, 0x5e, 0xa9, 0x35,     // Minor, UMaj
-            0x5b, 0x75, 0x26, 0x22, 0x33, 0xba, 0x60, 0x58,     // UMin, Flags
-            0x99, 0xa2, 0xc2, 0x88, 0x70, 0x3b, 0x59, 0x05,     // CDate, MDate
-            0x8a, 0xb4, 0xf7, 0x87, 0xea, 0xad, 0x05, 0x5a,     // IMaj, IndexCount
-            0xaf, 0x8c, 0x3e, 0x18, 0x7f, 0xda, 0x1e, 0xd4,     // IOffset, ILength
-            0xa2, 0x85, 0xac, 0x6c, 0x5f, 0x71, 0x64, 0xb0,     // HoleCount, HoleLoc
-            0xcd, 0x03, 0x72, 0x50, 0x28, 0x58, 0xc3, 0x63,     // HoleLength, IMinor
-            0x5c, 0x1f, 0x83, 0xbd, 0x74, 0xf6, 0x6b, 0xee,     // ILocation, fill
-            0xbf, 0x54, 0x46, 0xa8, 0xdc, 0xec, 0xdf, 0x96,     // fill, fill
-            0x24, 0xe1, 0xa2, 0x63, 0xc1, 0xfb, 0x1d, 0xff,
-            0x6b, 0x05, 0xba, 0xbf, 0x40, 0x88, 0x5f, 0xfb
-        };
+
 
         public ResourceEntry GetResource(TGI_Key Key)
         {
