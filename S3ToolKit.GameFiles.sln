@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{378247
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3ToolKit.Utils", "..\S3ToolKit.Utils\S3ToolKit.Utils\S3ToolKit.Utils.csproj", "{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{D231D334-F3E5-4DBB-8477-ACBB898C5FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D231D334-F3E5-4DBB-8477-ACBB898C5FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D231D334-F3E5-4DBB-8477-ACBB898C5FCB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{071FF9D6-33A1-4C68-8D57-090C13AF4DCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

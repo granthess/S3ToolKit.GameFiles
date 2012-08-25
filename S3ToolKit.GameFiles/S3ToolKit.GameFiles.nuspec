@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>S3ToolKit.GameFiles</id>
+    <version>$version$-prerelease</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl.html</licenseUrl>
+    <projectUrl>http://sims3.the-prof.net/forums</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Prerelease development version.</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>CCMagic Sims3 Custom Content</tags>
+  </metadata>
+</package>
