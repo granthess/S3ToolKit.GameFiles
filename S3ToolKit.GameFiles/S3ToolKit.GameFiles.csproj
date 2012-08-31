@@ -34,10 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="S3ToolKit.Utils, Version=1.0.13.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\S3ToolKit.Utils.1.0.13.1\lib\net40\S3ToolKit.Utils.dll</HintPath>
     </Reference>
-    <Reference Include="SharpCompress">
+    <Reference Include="SharpCompress, Version=0.8.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\sharpcompress.0.8.1\lib\net40\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="System" />
