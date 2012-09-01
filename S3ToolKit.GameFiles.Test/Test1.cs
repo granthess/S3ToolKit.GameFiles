@@ -28,5 +28,11 @@ namespace S3ToolKit.GameFiles.Test
     [TestFixture]
     public class Test1
     {
+        [Test]
+        public void TempTest()
+        {
+
+            Assert.That(1 == 1);
+        }
     }
 }
