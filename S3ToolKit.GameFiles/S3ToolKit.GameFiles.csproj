@@ -33,11 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="S3ToolKit.Utils, Version=1.0.13.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\S3ToolKit.Utils.1.0.13.1\lib\net40\S3ToolKit.Utils.dll</HintPath>
+    <Reference Include="S3ToolKit.Utils, Version=1.0.17.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\S3ToolKit.Utils.1.0.17.1\lib\net40\S3ToolKit.Utils.dll</HintPath>
     </Reference>
-    <Reference Include="SharpCompress, Version=0.8.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\sharpcompress.0.8.1\lib\net40\SharpCompress.dll</HintPath>
+    <Reference Include="SharpCompress, Version=0.8.2.0, Culture=neutral, PublicKeyToken=beaf6f427e128133, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\sharpcompress.0.8.2\lib\net40\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
