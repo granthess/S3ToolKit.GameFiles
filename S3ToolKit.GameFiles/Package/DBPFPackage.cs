@@ -161,7 +161,7 @@ namespace S3ToolKit.GameFiles.Package
             byte[] buffer;            
 
             // Start by getting the Header :  0x60 bytes at the beginning of the file
-            DataStore.Seek (0,SeekOrigin .Begin);
+            DataStore.Seek (0,SeekOrigin.Begin);
 
             buffer = new byte[0x60];
             DataStore.Read (buffer,0,0x60);
